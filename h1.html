@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        padding: auto;
+        color: white;
+        background-color: black;
+        border-radius: 12px;
+     
+     text-decoration: dotted;
+     text-shadow: 25cm;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   border-color: black;
+    }
+    button{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px;
+        border-color: black;
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+<body>
+<h1 id="text"> welcome to page </h1>
+<button onclick="change()">click me</button>
+<button ondblclick="change2()">double click me</button>
+<button onmousedown="change3()">mouse press</button>
+<button onmouseleave="change4()">mouse leave</button>
+<button onmouseenter="change5()">mouse enter</button>
+<button onmouseout="change6()">mouse out</button>
+<button onmouseover="change7()">mouse over</button>
+<button onmouseup="change8()">mouse up</button>
+   <script>
+    function change(){
+        document.getElementById("text").innerHTML="<h1>hello my name is krunal </h1>"
+    }
+    change2=()=>{       
+        document.getElementById("text").innerHTML="<h1> you click to doubble times  </h1>"
+    }
+    change3=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse press  </h1>"
+    }
+    change4=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse leave  </h1>"
+    }
+    change5=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse enter  </h1>"
+    }
+    change6=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse out  </h1>"
+    }
+    change7=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse over  </h1>"
+    }
+    change8=()=>{
+        document.getElementById("text").innerHTML="<h1> you click to mouse up  </h1>"
+    }
+   </script>
+</body>
+</html>
